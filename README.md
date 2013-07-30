@@ -31,6 +31,6 @@ You can even call a function directly:
 
 ```javascript
 jQuery("#mysupercooldiv").asyncJS(function() {
-    document.write("<scr" + "ipt src="http://slow.xyz/slow.js"><\/scr"+"ipt>");
+    document.write("<scr" + "ipt src='http://slow.xyz/slow.js'><\/scr"+"ipt>");
 });
 ``` 
