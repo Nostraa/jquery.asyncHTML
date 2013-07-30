@@ -1,0 +1,32 @@
+{
+    "name": "asynchtml",
+    "title": "jQuery AsyncHTML",
+    "description": "jQuery plugin for asynchronous loading of slow scripts containing document.write",
+    "keywords": [
+        "asynchronous",
+        "html-injection",
+        "advertisements"
+    ],
+    "version": "0.1.0",
+    "author": {
+        "name": "Daniel Klischies"
+    },
+    "maintainers": [
+        {
+            "name": "Daniel Klischies"
+        }
+    ],
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/jquery/jquery-color/blob/2.1.2/MIT-LICENSE.txt"
+        }
+    ],
+    "bugs": "https://github.com/Nostraa/jquery.asyncHTML/issues",
+    "homepage": "https://github.com/Nostraa/jquery.asyncHTML",
+    "docs": "https://github.com/Nostraa/jquery.asyncHTML",
+    "download": "https://github.com/Nostraa/jquery.asyncHTML",
+    "dependencies": {
+        "jquery": ">=2.0"
+    }
+}
