@@ -21,7 +21,7 @@ jQuery("#mysupercooldiv").asyncHTML("<!-- Some super slow html goes here -->");
 
 This will cause the "Some super slow html goes here" comment being rendered in a hidden iframe and afterwards being copied to the #mysupercooldiv element.
 
-It's also possible to load an external js directly:
+It's also possible to load an external javascript file:
 
 ```javascript
 jQuery("#mysupercooldiv").asyncJS("http://abc.xyz/foo.js");
@@ -34,3 +34,5 @@ jQuery("#mysupercooldiv").asyncJS(function() {
     document.write("<scr" + "ipt src='http://slow.xyz/slow.js'><\/scr"+"ipt>");
 });
 ``` 
+
+Please note: All Javascript is executed in an iframe's context. You might not have access to libraries or DOM elements of the parent document.
