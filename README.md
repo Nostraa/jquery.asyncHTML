@@ -1,7 +1,7 @@
 jquery.asyncHTML
 ================
 
-jQuery Plugin utilizing iFrames to load content asynchronously. Get rid of slow ads relying on document.write!
+jQuery Plugin utilizing iFrames to load content asynchronously.
 
 Currently only supports webkit-based browsers (e.g. Chrome, Safari), although using https://github.com/jugglinmike/srcdoc-polyfill might extend compatibility
 
@@ -11,6 +11,8 @@ Description
 This plugin loads content inside of an iframe and copies the iframe's content into the specified html element. In doing so, everything (including document.write reliant scripts) is loaded asynchronously, lowering the overall page load time.
 
 Please note: This plugin does not increase the performance of javascript but allows the browser to continue rendering, while it is waiting for a slow javascript (which may contain document.write and thus cannot be loaded using the native async=true approach of SCRIPT-tags).
+
+Warning: Since embedded content will be downloaded and rendered twice by most browsers, you may encounter tracking differences when tracking-pixels are used.
 
 Usage
 -----
